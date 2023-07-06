@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Layout</title>
+  <style>
+    /* CSS Styling */
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto 1fr; /* Mengatur kolom pertama mengikuti ukuran foto */
+      grid-gap: 10px; /* Jarak antar elemen dalam grid */
+    }
+
+    .image {
+      width: 50px; /* Mengatur lebar foto menjadi 50px */
+      height: auto; /* Menjaga aspek ratio foto */
+    }
+
+    .text-top {
+      grid-column: 2; /* Mengatur teks atas ke kolom kedua */
+      grid-row: 1; /* Mengatur teks atas ke baris pertama */
+      background-color: #f2f2f2; /* Warna latar belakang teks atas */
+      padding: 10px; /* Padding pada teks atas */
+    }
+
+    .text-bottom {
+      grid-column: 2; /* Mengatur teks bawah ke kolom kedua */
+      grid-row: 2; /* Mengatur teks bawah ke baris kedua */
+      background-color: #f2f2f2; /* Warna latar belakang teks bawah */
+      padding: 10px; /* Padding pada teks bawah */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <img class="image" src="path/to/your/image.jpg" alt="Foto">
+    <div class="text-top">
+      <h2>Judul Teks Atas</h2>
+      <p>Isi teks atas.</p>
+    </div>
+    <div class="text-bottom">
+      <h2>Judul Teks Bawah</h2>
+      <p>Isi teks bawah.</p>
+    </div>
+  </div>
+</body>
+</html>
